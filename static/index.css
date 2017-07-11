@@ -1,0 +1,49 @@
+body{
+	background-color: grey;	
+}
+h1 {
+    font-size: 88px;
+    display: flex;
+    text-decoration: underline;
+    right: 0;
+    justify-content: center;
+    left: 0;
+    margin: 0;
+}
+h2{
+	margin: 30px 0 0 69px;
+}
+h3{
+	font-size: 45px;
+    margin-left: 100px;
+    margin: 20px 0 0 115px;
+}
+legend{
+	margin-left: 35px;
+    font-size: 34px;
+}
+fieldset{
+    border-width: 5px;
+    height: 179px;
+    margin: 20px;
+}
+.container{
+	display: flex;
+    justify-content: center;
+    margin: 15px 0 0 0;
+}
+input{
+	border: 3px solid;
+    height: 101px;
+    width: 385px;
+    font-size: 46px;
+}
+button{
+	height: 74px;
+    width: 304px;
+    font-size: 46px;
+    box-shadow: 21px 14px 32px 0px rgba(0,0,0,0.75), 13px -7px 32px 0px rgba(0,0,0,0.75), -5px 17px 32px 0px rgba(0,0,0,0.75);
+    position: relative;
+    top: 14px;
+    left: 15px;
+}

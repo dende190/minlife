@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+
+{% block titulo %}
+	<title>Tu Tiempo de Vida</title>
+{% endblock titulo %}
+{% block link %}
+	<link rel="stylesheet" href="../static/index.css">
+{% endblock link %}
+{% block body %}
+	<h1 >BIENVENIDOS</h1>
+	<h3>¿ Quieres saber cuantos minutos llevas de vida ?</h3>
+	<div>
+		<form action="/min-life" method="get">
+			<fieldset>
+				<legend>INGRESA TU FECHA DE NACIMIENTO</legend>
+				<div class="container">
+					<input type="date" value="1997-06-05" name="bday" min="1950-01-01" max="2017-04-30">
+					<button type="submit" name="button">Enviar</button>
+				</div>
+			</fieldset>
+		</form>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+				<h2> {{ message }}</h2>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+{% endblock body %}

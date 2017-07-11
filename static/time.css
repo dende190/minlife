@@ -1,0 +1,23 @@
+.titulo_edad, .edad_persona{
+	margin: 0;
+}
+.edad_persona{
+	margin-top: 20px;
+}
+.container_edad{
+	font-size: 25px;
+    margin-left: 20px;
+}
+.minutos{
+	font-size: 65px;
+    display: flex;
+    justify-content: center;
+}
+.titulo_minutos{
+	margin: 0;
+}
+.cuenta_minutos{
+	display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}

@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+{% block titulo %}
+	<title>Tic Tac...</title>
+{% endblock titulo %}
+{% block link %}
+	<link rel="stylesheet" href="../static/time.css">
+{% endblock link %}
+{% block body %}
+	<section class="edad">
+		<div class="container_edad">
+			<h1 class="titulo_edad">Tu edad es:</h1>
+			{% if month_old > 1 and day_old > 1 %}
+				<h3 class="edad_persona"> {{ years_old }} años, {{ month_old }} meses y {{ day_old }} dias </h3>
+			{% elif month_old > 1 and day_old == 1 %}
+				<h3 class="edad_persona"> {{ years_old }} años, {{ month_old }} meses y {{ day_old }} dia </h3>
+			{% elif month_old == 1 and day_old > 1 %}
+				<h3 class="edad_persona"> {{ years_old }} años, {{ month_old }} mes y {{ day_old }} dias </h3>
+			{% elif month_old == 1 and day_old == 1 %}
+				<h3 class="edad_persona"> {{ years_old }} años, {{ month_old }} mes y {{ day_old }} dia </h3>
+			{% endif %}
+		</div>
+	</section>
+	<section class="minutos">
+		<div class="container">
+			<h1 class="titutlo_minutos">has vivido en minutos:</h1>
+			<h1 class="cuenta_minutos"> {{ minutos }} </h1>
+		</div>
+	</section>
+	<form action="/">
+		<button type="submit">Regresar</button>
+	</form>
+{% endblock body %}
